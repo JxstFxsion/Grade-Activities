@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grade Activities</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Grade Activities</h1>
+
+  <div>
+    <button onclick="addActivity()">Add Activity</button>
+    Activity <input type="text" id="activityName" />
+    Weight <input type="number" id="activityWeight" />
+  </div>
+
+  <div>
+    <button onclick="addGrade()">Add Grade</button>
+    Grade <input type="number" id="gradeValue" />
+    Activity no <input type="number" id="gradeActivityNo" />
+  </div>
+
+  <div>
+    <button onclick="deleteActivity()">Delete Activity</button>
+  </div>
+
+  <table id="activityTable">
+    <thead>
+      <tr>
+        <th>No</th>
+        <th>Activity</th>
+        <th>Percentage</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+  <div class="error" id="errorMsg">Error Message:</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
